@@ -99,10 +99,11 @@ export default class Data extends Component {
         render() {
             return (
                 <div>
+                    {console.log(this.state.filteredUsers)}
                 <Nav handleSearchChange={this.handleSearchChange}>
 
                 </Nav>
-                <Table headings={this.props.headings} users={this.state.filteredUsers} handleSort={this.handleSort}>
+                <Table headings={this.headings} users={this.state.filteredUsers} handleSort={this.handleSort}>
 
                 </Table>
                 </div>
